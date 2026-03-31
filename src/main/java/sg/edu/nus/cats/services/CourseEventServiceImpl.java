@@ -3,6 +3,7 @@ package sg.edu.nus.cats.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +15,7 @@ import sg.edu.nus.cats.repositories.CourseEventRepository;
 @RequiredArgsConstructor
 public class CourseEventServiceImpl implements CourseEventService {
 
-	private final CourseEventRepository courseEventRepository;
+	@Autowired CourseEventRepository courseEventRepository;
 
 	@Override
 	@Transactional(readOnly = true)

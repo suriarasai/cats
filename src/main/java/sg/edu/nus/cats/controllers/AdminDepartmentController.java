@@ -1,7 +1,8 @@
 package sg.edu.nus.cats.controllers;
 
-import jakarta.validation.Valid;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import sg.edu.nus.cats.exception.DepartmentNotFound;
@@ -28,9 +30,12 @@ import sg.edu.nus.cats.validators.DepartmentValidator;
 @Slf4j
 public class AdminDepartmentController {
 
-	private final DepartmentService dService;
-	private final EmployeeService eService;
-	private final DepartmentValidator dValidator;
+	@Autowired
+	DepartmentService dService;
+	@Autowired
+	EmployeeService eService;
+	@Autowired
+	DepartmentValidator dValidator;
 
 	@InitBinder("department")
 	private void initDepartmentBinder(WebDataBinder binder) {

@@ -24,5 +24,7 @@ public class Department {
 	public Department(String departmentId) {
 		this.departmentId = departmentId;
 	}
+	
+	
 
 }
