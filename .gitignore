@@ -1,69 +1,102 @@
-/.metadata/
-/cats-backend/
-*.class
-*.properties
-.project
-target/classes/META-INF/maven/sg.edu.nus/cats/pom.properties
-target/classes/sg/edu/nus/cats/CatsApplication.class
-target/classes/sg/edu/nus/cats/controllers/AdminDepartmentController.class
-target/classes/sg/edu/nus/cats/controllers/AdminEmployeeController.class
-target/classes/sg/edu/nus/cats/controllers/AdminRoleController.class
-target/classes/sg/edu/nus/cats/controllers/AdminUserController.class
-target/classes/sg/edu/nus/cats/controllers/CommonController.class
-target/classes/sg/edu/nus/cats/controllers/ManagerController.class
-target/classes/sg/edu/nus/cats/controllers/StaffController.class
-target/classes/sg/edu/nus/cats/controllers/UserSession.class
-target/classes/sg/edu/nus/cats/exception/CourseNotFound.class
-target/classes/sg/edu/nus/cats/exception/DepartmentNotFound.class
-target/classes/sg/edu/nus/cats/exception/EmployeeNotFound.class
-target/classes/sg/edu/nus/cats/exception/RoleNotFound.class
-target/classes/sg/edu/nus/cats/exception/UserNotFound.class
-target/classes/sg/edu/nus/cats/helper/Approve.class
-target/classes/sg/edu/nus/cats/helper/CourseEventEnum.class
-target/classes/sg/edu/nus/cats/helper/EmployeeCourses.class
-target/classes/sg/edu/nus/cats/model/Course.class
-target/classes/sg/edu/nus/cats/model/CourseEvent.class
-target/classes/sg/edu/nus/cats/model/Department.class
-target/classes/sg/edu/nus/cats/model/Employee.class
-target/classes/sg/edu/nus/cats/model/Role.class
-target/classes/sg/edu/nus/cats/model/User.class
-target/classes/sg/edu/nus/cats/repositories/CourseEventRepository.class
-target/classes/sg/edu/nus/cats/repositories/CourseRepository.class
-target/classes/sg/edu/nus/cats/repositories/DepartmentRepository.class
-target/classes/sg/edu/nus/cats/repositories/EmployeeRepository.class
-target/classes/sg/edu/nus/cats/repositories/RoleRepository.class
-target/classes/sg/edu/nus/cats/repositories/UserRepository.class
-target/classes/sg/edu/nus/cats/services/CourseEventService.class
-target/classes/sg/edu/nus/cats/services/CourseEventServiceImpl.class
-target/classes/sg/edu/nus/cats/services/CourseService.class
-target/classes/sg/edu/nus/cats/services/CourseServiceImpl.class
-target/classes/sg/edu/nus/cats/services/DepartmentService.class
-target/classes/sg/edu/nus/cats/services/DepartmentServiceImpl.class
-target/classes/sg/edu/nus/cats/services/EmployeeService.class
-target/classes/sg/edu/nus/cats/services/EmployeeServiceImpl.class
-target/classes/sg/edu/nus/cats/services/RoleService.class
-target/classes/sg/edu/nus/cats/services/RoleServiceImpl.class
-target/classes/sg/edu/nus/cats/services/UserService.class
-target/classes/sg/edu/nus/cats/services/UserServiceImpl.class
-target/classes/sg/edu/nus/cats/ServletInitializer.class
-target/classes/sg/edu/nus/cats/validators/CourseValidator.class
-target/classes/sg/edu/nus/cats/validators/DepartmentValidator.class
-target/classes/sg/edu/nus/cats/validators/EmployeeValidator.class
-target/classes/sg/edu/nus/cats/validators/RoleValidator.class
-target/classes/sg/edu/nus/cats/validators/UserValidator.class
-target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-target/test-classes/sg/edu/nus/cats/CatsApplicationTests.class
-target/classes/sg/edu/nus/cats/CatsApplication.class
-target/classes/META-INF/maven/sg.edu.nus/cats/pom.properties
-target/classes/sg/edu/nus/cats/controllers/AdminDepartmentController.class
-target/classes/sg/edu/nus/cats/model/Department.class
-target/classes/sg/edu/nus/cats/services/CourseEventServiceImpl.class
-target/classes/sg/edu/nus/cats/services/CourseServiceImpl.class
-target/classes/sg/edu/nus/cats/services/DepartmentServiceImpl.class
-target/classes/sg/edu/nus/cats/services/EmployeeServiceImpl.class
-target/classes/sg/edu/nus/cats/services/RoleServiceImpl.class
-target/classes/sg/edu/nus/cats/services/UserServiceImpl.class
-target/classes/sg/edu/nus/cats/validators/DepartmentValidator.class
+target/
+.metadata/
+.settings/
+# ===========================
+# Eclipse / STS
+# ===========================
 .classpath
+.project
+.settings/
+.loadpath
+.recommenders/
 .factorypath
+
+# STS-specific
+.apt_generated
+.apt_generated_test
+
+# Eclipse build output
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# ===========================
+# Maven
+# ===========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===========================
+# Spring Boot
+# ===========================
+*.log
+log/
+logs/
+
+# Spring Boot devtools
+.spring-boot-devtools.properties
+
+# ===========================
+# Java
+# ===========================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ===========================
+# IntelliJ (in case of team mix)
+# ===========================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ===========================
+# VS Code (in case of team mix)
+# ===========================
+.vscode/
+
+# ===========================
+# OS Files
+# ===========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env
+.env.*
+*.properties.local
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+# ===========================
+# Misc
+# ===========================
+*.tmp
+*.bak
+*.swp
+*.orig
+*.class
+*.class
+*.prefs

@@ -19,6 +19,8 @@ import jakarta.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import sg.edu.nus.cats.helper.CourseEventEnum;
@@ -45,10 +47,12 @@ public class Course {
 
 	@Column(name = "fromdate")
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate fromDate;
 
 	@Column(name = "todate")
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate toDate;
 
 	@Column(name = "fees")

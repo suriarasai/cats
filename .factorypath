@@ -74,5 +74,5 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/spring-core/6.2.15/spring-core-6.2.15.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/springframework/spring-jcl/6.2.15/spring-jcl-6.2.15.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>

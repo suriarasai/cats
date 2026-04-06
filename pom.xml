@@ -15,7 +15,7 @@
 	<name>cats</name>
 	<description>Course Application Tracking System [CATS]</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<bootstrap.version>5.3.2</bootstrap.version>
 		<font-awesome.version>6.5.1</font-awesome.version>
 		<jquery.version>3.7.1</jquery.version>
@@ -72,7 +72,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.36</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
